@@ -1,0 +1,38 @@
+@import '../../styles/palette';
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/assets/header.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-weight: bold;
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: $font-color-light;
+    letter-spacing: 0.05em;
+    
+  }
+
+  a {
+    background-color: $color-primary;
+    color: $font-color-light;
+    padding: 15px 150px;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: .2s;
+
+    &:hover {
+      background-color: $color-primary-darker;
+    }
+  }
+
+}

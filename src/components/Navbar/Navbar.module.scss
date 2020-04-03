@@ -1,0 +1,53 @@
+@import '../../styles/palette'; 
+
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $navbar-bgc;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+
+  .logo {
+    font-weight: bold;
+    color: $color-primary;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin-left: 50px;
+
+      .link {
+        font-size: 20px;
+        color: $navbar-color;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: .2s;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+
+      .special {
+        padding: 15px 100px;
+        background-color: $color-primary;
+
+        &:hover {
+          color: $navbar-color;
+          background-color: $color-primary-darker;
+        }
+      }
+    }
+  }
+}
+

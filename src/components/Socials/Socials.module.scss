@@ -1,0 +1,32 @@
+@import '../../styles/palette';
+
+.root {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  width: 70px;
+  background-color: $color-dark;
+  color: $font-color-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 5px;
+  transition: .3s;
+
+  &:hover {
+    padding-right: 20px;
+  }
+
+  i {
+    display: block;
+    font-size: 40px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
