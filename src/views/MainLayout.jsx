@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Header from '../components/Header/Header';
 import About from '../components/About/About';
 import News from '../components/News/News';
+import Cooperation from '../components/Cooperation/Cooperation';
 
 const  MainLayout = ({children}) => {
   return (
@@ -12,6 +13,7 @@ const  MainLayout = ({children}) => {
     <Header />
     <About />
     <News />
+    <Cooperation />
       {children}
     </>
   )
